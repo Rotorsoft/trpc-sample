@@ -1,5 +1,5 @@
 import { createTRPCProxyClient, httpBatchLink } from "@trpc/client"
-import type { Users } from "../server/model/User.aggregate"
+import type { Users } from "../server/routers/Users"
 
 const trpc = createTRPCProxyClient<Users>({
   links: [
